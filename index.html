@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: grey;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 2rem;
+            color: white
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+            align-items: center;
+        }
+
+        .firstSecton div {
+            width: 30%;
+            margin: 801px 0;
+
+        }
+
+        .leftSection {
+            width: 30%;
+            font-size: 2rem;
+        }
+
+        .leftSection .btn {
+            margin-top: 35px;
+            padding: 12px;
+            background: purple;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection {
+            width: 30%;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(87, 226, 129);
+        }
+
+        #element {
+            color: rgb(87, 226, 129);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(87, 226, 129);
+            height: 3px;
+            margin: 60px 84px;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem; 
+            margin: 40px;
+            text-align: center;
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: rgb(87, 226, 129);
+            width: 80vw;
+            height: 2px;
+            margin: 56px 10;
+            display: flex;
+
+
+        }
+
+        .secondSection .vertical1 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 100px;
+        }
+
+        .secondSection .vertical2 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 400px;
+        }
+
+        .secondSection .vertical3 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 700px;
+        }
+
+        .secondSection .vertical4 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 1000px;
+        }
+
+        .image-top {
+            height: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 20px;
+            width: 150px;
+            right: 70px;
+        }
+
+        .vertical-title3 {
+            position: relative;
+            top: 20px;
+            width: 150px;
+            right: 40px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 100px;
+            color: darkgrey;
+            position: relative;
+            top: 40px;
+            width: 150px;
+            font-size: 13px;
+            right: 80px;
+        }
+
+        .vertical-desc3 {
+            position: relative;
+            top: 100px;
+            color: darkgrey;
+            position: relative;
+            top: 40px;
+            width: 150px;
+            font-size: 13px;
+            right: 40px;
+        }
+
+        .footer {
+            background-color: rgb(87, 226, 129);
+            text-align: center;
+            height: 100px;
+            color: black;
+        }
+
+        .lower-first {
+            height: 40vw;
+            text-align: center;
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .lower-first h1 {
+            font-size: 2rem;
+            margin: 2px;
+            padding: 20px;
+        }
+
+        .lower-first .vertical1 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 100px;
+        }
+
+        .lower-first .vertical2 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 400px;
+        }
+
+        .lower-first .vertical3 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 700px;
+        }
+
+        .lower-first .vertical4 {
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin-left: 1000px;
+        }
+
+        .lower-first hr {
+            border: 0;
+            background: rgb(87, 226, 129);
+            height: 2px;
+            margin: 0;
+        }
+
+        .lower-first .vertical-title3 {
+            position: relative;
+            top: 20px;
+            width: 150px;
+            right: 70px;
+        }
+        
+        .lower-first .vertical-desc3 {
+            position: relative;
+            top: 100px;
+            color: darkgrey;
+            position: relative;
+            top: 40px;
+            width: 150px;
+            font-size: 13px;
+            right: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Umar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="file:///E:/PortfolioWebsite/index.html">Home</li></a>
+                    <li><a href="About.html">About</li></a>
+                    <li><a href="Loginform.html">Login</li></a>
+                    <li><a href="contactMe.html">Contact Me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Umar!</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"
+                        onclick="window.location.href='file:///E:/PortfolioWebsite/MyResume%20(1).pdf';">
+                        Download resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="PngItem_1272138.png" alt="Image not found">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey"></span>
+            <h1>Work experience</h1>
+            <div class="box"></div>
+            <div class="vertical1">
+                <img class="image-top" src="pngwing.com.png" alt="Image not found">
+                <div class="vertical-title">
+                    HTML Developer
+                </div>
+                <div class="vertical-desc">
+                    Hi, I’m Umar, an HTML developer who loves to design and code websites. I have a keen eye for detail
+                    and a passion for learning new technologies.
+                    I enjoy working with web designers and collaborating on projects that challenge my skills.
+                </div>
+            </div>
+            <div class="vertical2">
+                <img class="image-top" src="pngwing.com (1).png" alt="Image not found">
+                <div class="vertical-title">
+                    CSS Developer
+                </div>
+                <div class="vertical-desc">
+                    Hi, I’m Umar, a CSS developer who loves to style and animate websites.
+                    I have a good sense of aesthetics and a flair for creativity.
+                    I’m proficient in CSS, Sass, Bootstrap, and jQuery, and I can create beautiful and dynamic web
+                    designs.
+                    I’m always looking for opportunities to learn new techniques and trends in web design.
+                </div>
+            </div>
+            <div class="vertical3">
+                <img class="image-top" src="pngwing.com (5).png" alt="Image not found">
+                <div class="vertical-title3">
+                    JavaScript Developer
+                </div>
+                <div class="vertical-desc3">
+                    Hi, I’m Umar, a JavaScript developer who loves to program and interact with websites.
+                    I have a strong logical thinking and a curiosity for problem-solving.
+                </div>
+            </div>
+            <div class="vertical4">
+                <img class="image-top" src="pngwing.com (4).png" alt="Image not found">
+                <div class="vertical-title">
+                    NodeJs Developer
+                </div>
+                <div class="vertical-desc">
+                    Hi, I’m Umar, a NodeJs developer who loves to build and run websites. I have a solid understanding
+                    of server-side programming and a keen interest in scalability and performance.
+                    I enjoy working with JavaScript developers and creating back-end services for their web
+                    applications.
+                </div>
+        </section>
+        <hr>
+        <section class="lower-first">
+            <h1>Projects</h1>
+    <hr>
+            <div class="box"></div>
+            <div class="vertical1">
+                <img class="image-top" src="pngwing.com.png" alt="Image not found">
+                <div class="vertical-title">
+                    Calculator
+                </div>
+                <div class="vertical-desc">
+                    This calculator is created using HTML, CSS, and JavaScript. 
+                    The calculator can perform basic mathematical operations like addition, subtraction, multiplication, and division. 
+                    The HTML file will contain the structure of the calculator, the CSS file will add design to the calculator, and the JavaScript file will add functionality to the calculator.      </div>
+            </div>
+            <div class="vertical2">
+                <img class="image-top" src="pngwing.com (1).png" alt="Image not found">
+                <div class="vertical-title">
+                    Portfolio Website
+                </div>
+                <div class="vertical-desc">
+                    A portfolio website is a website that showcases your work and skills to potential employers or clients. 
+                    It is essential whether you work as a web developer or designer.
+                </div>
+            </div>
+            <div class="vertical3">
+                <img class="image-top" src="pngwing.com (5).png" alt="Image not found">
+                <div class="vertical-title3">
+                    Password management system
+                </div>
+                <div class="vertical-desc3">
+                    It is based on set of principles and best practices to be followed by users while
+                    storing and managing passwords in and efficient manager to secure passwords as much as 
+                    they can to prevent unauthorized access.
+                </div>
+            </div>
+            <div class="vertical4">
+                <img class="image-top" src="pngwing.com (4).png" alt="Image not found">
+                <div class="vertical-title">
+                    Login Form
+                </div>
+                <div class="vertical-desc">
+                    Simple login form using HTML, CSS and JavaSript with fields like username and 
+                    password. If user enters correct username and password the it shows login sucessfully
+                    but if user enters wrong credentials it shows invalid inputs. 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Umar's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <h2>copyright &copy;| All right reserved </h2>
+            </div>
+            <div class="footer-third"></div>
+            <div class="footer-forth"></div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer!', 'Graphic designer!', 'Web designer!'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
